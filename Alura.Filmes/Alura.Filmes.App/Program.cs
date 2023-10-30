@@ -12,7 +12,12 @@ namespace Alura.Filmes.App
                 {
                     System.Console.WriteLine(ator);
                 }
-            }
+
+				foreach (var filme in contexto.Filmes)
+				{
+					System.Console.WriteLine(filme);
+				}
+			}
         }
     }
 }

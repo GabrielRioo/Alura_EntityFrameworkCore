@@ -135,6 +135,8 @@
   <ItemGroup>
     <Compile Include="Dados\AluraFilmesContext.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
+    <Compile Include="Negocio\Ator.cs" />
+    <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -146,9 +148,7 @@
     <Content Include="Scripts\alurafilmes-cargainicial.sql" />
     <Content Include="Scripts\alurafilmes-estrutura.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Negocio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
