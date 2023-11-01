@@ -17,7 +17,19 @@ namespace Alura.Filmes.App
 				{
 					System.Console.WriteLine(filme);
 				}
+
+				foreach (var elenco in contexto.Elenco)
+				{
+                    // Obtendo valor das Shadow Properties
+                    var entidade = contexto.Entry(elenco);
+                    var filmId = entidade.Property("film_id").CurrentValue;
+					var actorId = entidade.Property("actor_id").CurrentValue;
+
+					System.Console.WriteLine($"Filme: {filmId}, Actor: {actorId}");
+				}
 			}
+
+            System.Console.Read();
         }
     }
 }

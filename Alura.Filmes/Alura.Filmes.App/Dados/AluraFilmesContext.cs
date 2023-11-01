@@ -15,9 +15,11 @@ namespace Alura.Filmes.App.Dados
 		{
 			modelBuilder.ApplyConfiguration(new AtorConfiguration());
 			modelBuilder.ApplyConfiguration(new FilmeConfiguration());
+			modelBuilder.ApplyConfiguration(new FilmeAtorConfiguration());
 		}
 
 		public DbSet<Ator> Atores { get; set; }
 		public DbSet<Filme> Filmes { get; set; }
+		public DbSet<FilmeAtor> Elenco { get; set; }
 	}
 }

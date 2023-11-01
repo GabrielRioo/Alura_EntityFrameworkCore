@@ -16,7 +16,7 @@ namespace Alura.Filmes.App.Negocio
 
 		public override string ToString()
 		{
-			return $"Ator ({Id}): {Titulo} - {Descricao}";
+			return $"Filme ({Id}): {Titulo} - {Anolancamento}";
 		}
 	}
 }
